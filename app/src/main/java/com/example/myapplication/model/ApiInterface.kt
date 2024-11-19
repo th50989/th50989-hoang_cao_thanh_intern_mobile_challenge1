@@ -16,7 +16,7 @@ interface ExchangeRateApi {
 class ExchangeRateRepository {
 
     private val retrofit = Retrofit.Builder()
-        .baseUrl("https://v6.exchangerate-api.com/v6/d1df7b149ae19f8bdd541f2d/") // I trust to give my key
+        .baseUrl("https://v6.exchangerate-api.com/v6/{your key here since i cant publish it on github public}/") // I trust to give my key
         .addConverterFactory(GsonConverterFactory.create())
         .build()
 
