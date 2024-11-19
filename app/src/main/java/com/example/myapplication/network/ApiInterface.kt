@@ -1,5 +1,6 @@
-package com.example.myapplication.model
+package com.example.myapplication.network
 
+import com.example.myapplication.model.ExchangeRateResponse
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 import retrofit2.http.GET

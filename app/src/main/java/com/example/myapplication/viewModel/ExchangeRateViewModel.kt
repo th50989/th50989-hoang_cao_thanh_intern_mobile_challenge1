@@ -5,11 +5,9 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
-import com.example.myapplication.model.ExchangeRateRepository
-import com.example.myapplication.model.ExchangeRateResponse
+import com.example.myapplication.network.ExchangeRateRepository
 import kotlinx.coroutines.launch
-import kotlinx.coroutines.flow.MutableStateFlow
-import kotlinx.coroutines.flow.StateFlow
+
 sealed class UIState<out T> {
     data class Success<ExchangeRateResponse>(val data: ExchangeRateResponse) : UIState<ExchangeRateResponse>() // can use Any T if wanted
     data class Error(val message: String) : UIState<Nothing>()
